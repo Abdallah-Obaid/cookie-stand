@@ -84,7 +84,8 @@ main h1 {
     display: block;
     float: right;
     position: sticky;
-    top: 0;
+    top: 49px;
+    right: 30px;
 }
 
 header nav ul {
