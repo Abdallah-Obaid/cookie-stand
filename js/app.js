@@ -71,7 +71,7 @@ branch5.render();
  var tableEl = document.createElement('table');
  branchDivCon.appendChild(tableEl);
 
- // //the second line
+ // //th other lines
 var totalArray=[];
  for(var i = 0; i < branch1.purchased.length; i++) { 
 totalArray.push(branch1.purchased[i]+branch2.purchased[i]+branch3.purchased[i]+branch4.purchased[i]+branch5.purchased[i])
@@ -100,3 +100,8 @@ fell('Dubai',branch3.purchased,branch3.total,'td');
 fell('Paris',branch4.purchased,branch4.total,'td');
 fell('Lima',branch5.purchased,branch5.total,'td');
 fell('Total',totalArray,branch1.total+branch2.total+branch3.total+branch4.total+branch5.total,'td');
+var pass = prompt("Type the pass");
+  while (userName !== "easy") {
+  alert('you can ask me for the  bass');
+var userName = prompt("Type the pass");
+} 
