@@ -86,11 +86,12 @@ main h1 {
     margin-left: 150px;
 }
  #personal-img{
-    width: 15%;
-    display: block;
-    float: right;
-    position: sticky;
-    top: 0;
+  width: 15%;
+  display: block;
+  float: right;
+  position: sticky;
+  top: 49px;
+  right: 30px;
 }
 
 header nav ul {
