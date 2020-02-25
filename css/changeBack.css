@@ -129,7 +129,7 @@ border-radius: 40px 0 40px 0;
 }
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-/* html, body { background: #333 url("https://codepen.io/images/classy_fabric.png"); } */
+html, body { background: #333 url("https://codepen.io/images/classy_fabric.png"); }
 
 .slides {
     padding: 0;
@@ -324,3 +324,4 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   li:hover::after{
     transform: rotateZ(-405deg);
   }
+  

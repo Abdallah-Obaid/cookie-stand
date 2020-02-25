@@ -100,8 +100,14 @@ fell('Dubai',branch3.purchased,branch3.total,'td');
 fell('Paris',branch4.purchased,branch4.total,'td');
 fell('Lima',branch5.purchased,branch5.total,'td');
 fell('Total',totalArray,branch1.total+branch2.total+branch3.total+branch4.total+branch5.total,'td');
+
+//pass for the sale bage:-
 var pass = prompt("Type the pass");
-  while (userName !== "easy") {
-  alert('you can ask me for the  bass');
-var userName = prompt("Type the pass");
+  while (pass !== "easy") {
+      if (pass === "easy") {
+      } else {
+        alert('you can ask me for the  bass');
+        var pass = prompt("Type the pass");   
+      }
+
 } 

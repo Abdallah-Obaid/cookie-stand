@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdallah-Obaid-info</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Index.css">
 </head>
 <body>
     <header>
+<!-- to make a change back botton"start" -->
+      <link id="pagestyle" rel="stylesheet" type="text/css" href="css/Index.css.css">
+      <script>
+      function swapStyleSheet(sheet){
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+      }
+      </script>
+      <button onclick="swapStyleSheet('css/changeBack.css')">Press to change color</button>
+      <button onclick="swapStyleSheet('css/Index.css')">Default background</button>
+<!-- to make a change back button"end" -->
         <img id="personal-img"  src ="img/fish.png">
         <h1 id="A">Pat salamon cookies</h1>
         <nav>
@@ -22,6 +32,7 @@
       
     </header>
     <main>
+      
       <section id="motion">
          <ul class="slides">
            <input type="radio" name="radio-btn" id="img-1" checked />
