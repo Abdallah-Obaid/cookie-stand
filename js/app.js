@@ -9,6 +9,8 @@ function Branch(name, maxHourlyCustomers, minHourlyCustomers, avgCookiesPerCusto
     this.purchased = [];
     this.total = 0;
     this.time =['6am: ','7am: ','8am: ','9am: ','10am: ','11am: ','12pm: ','1pm: ','2pm: ','3pm: ','4pm: ','5pm: ','6pm: ','7pm: '];
+    this.getTotalArray();// to active the function just on branch 1
+    this.render();
 }
 Branch.prototype.getTotalArray = function () {//we  use prototype to write the function out of function stractor
     for (var i = 6; i < 20; i++) {
@@ -40,7 +42,6 @@ Branch.prototype.render = function () {
     ulEl.appendChild(liTotalEl);
 }
 
-
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -48,32 +49,19 @@ function getRandomInt(min, max) {
 }
 
 var branch1 = new Branch('Seattle', 65, 23, 6.3);//we use new to use th stactor 
-branch1.getTotalArray();// to active the function just on branch 1
-branch1.render();
-
 var branch2 = new Branch('Tokyo', 24, 3, 1.2);//we use new to use th stactor 
-branch2.getTotalArray();// to active the function just on branch 1
-branch2.render();
-
 var branch3 = new Branch('Dubai', 38, 11, 3.7);//we use new to use th stactor 
-branch3.getTotalArray();// to active the function just on branch 1
-branch3.render();
-
 var branch4 = new Branch('Paris', 38, 20, 2.3);//we use new to use th stactor 
-branch4.getTotalArray();// to active the function just on branch 1
-branch4.render();
-
 var branch5 = new Branch('Lima', 16, 2, 4.6);//we use new to use th stactor 
-branch5.getTotalArray();// to active the function just on branch 1
-branch5.render();
+
 //####The table#####
  var branchDivCon = document.getElementById('cookies');
  var tableEl = document.createElement('table');
  branchDivCon.appendChild(tableEl);
 
  // //th other lines
-var totalArray=[];
- for(var i = 0; i < branch1.purchased.length; i++) { 
+var totalArray=[];// the sum of the column will be her 
+ for(var i = 0; i < branch1.purchased.length; i++) { // we can use any barnch for this
 totalArray.push(branch1.purchased[i]+branch2.purchased[i]+branch3.purchased[i]+branch4.purchased[i]+branch5.purchased[i])
 }
 
@@ -109,5 +97,4 @@ var pass = prompt("Type the pass");
         alert('you can ask me for the  bass');
         var pass = prompt("Type the pass");   
       }
-
 } 
