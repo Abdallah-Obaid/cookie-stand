@@ -28,21 +28,21 @@ Branch.prototype.render = function () {
     var articleEl = document.createElement('article');
     container.appendChild(articleEl);
     
-    var h2El = document.createElement('h2');
-    articleEl.appendChild(h2El);
-    h2El.textContent = this.name;
+    // var h2El = document.createElement('h2');
+    // articleEl.appendChild(h2El);
+    // h2El.textContent = this.name;
     
-    var ulEl = document.createElement('ul');
-    articleEl.appendChild(ulEl);
+    // var ulEl = document.createElement('ul');
+    // articleEl.appendChild(ulEl);
     
-    for (var i = 0; i < this.time.length; i++) {
-        var liEl = document.createElement('li');
-        liEl.textContent = this.time[i] + this.purchased[i] + " cookies";
-        ulEl.appendChild(liEl);
-    }
-    var liTotalEl = document.createElement('li');
-    liTotalEl.textContent = "Total: " + this.total + " cookies";
-    ulEl.appendChild(liTotalEl);
+    // for (var i = 0; i < this.time.length; i++) {
+    //     var liEl = document.createElement('li');
+    //     liEl.textContent = this.time[i] + this.purchased[i] + " cookies";
+    //     ulEl.appendChild(liEl);
+    // }
+    // var liTotalEl = document.createElement('li');
+    // liTotalEl.textContent = "Total: " + this.total + " cookies";
+    // ulEl.appendChild(liTotalEl);
 }
 
 function getRandomInt(min, max) {

@@ -9,6 +9,16 @@
 </head>
 <body>
     <header>
+      <!-- to make a change back botton"start" -->
+      <link id="pagestyle" rel="stylesheet" type="text/css" href="css/index.css.css">
+      <script>
+      function swapStyleSheet(sheet){
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+      }
+      </script>
+      <button onclick="swapStyleSheet('css/changeBack.css')">Press to change color</button>
+      <button onclick="swapStyleSheet('css/index.css')">Default background</button>
+<!-- to make a change back button"end" -->
         <img id="personal-img"  src ="img/fish.png">
         <h1>Msr Pats cookies</h1>
         <nav>
@@ -20,7 +30,7 @@
       </nav>
       </header>
       <main>
-        <h2>Branch's Sales :</h2>
+        <h2 id="table">Branch's Sales :</h2>
         <form id="Form">
           <fieldset>
             <legend>Add new Branch :</legend>
@@ -41,7 +51,8 @@
           <input type="submit">
         </fieldset>
         </form >
-
+        <br>
+        <br>
         <div id="cookies">
              <!-- <table>
                  <tr>
@@ -138,7 +149,7 @@
      <li class="boxx vine"></li>
    </ul>
    </section>
-<footer id="table">
+<footer >
   <p>All copyrights reserved © 2020-2021</p>      
 </footer>
     <script src="js/app.js"></script>

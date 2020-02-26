@@ -4,10 +4,13 @@ table {
   width: 100%;
 }
 
-th, td {
-  text-align: left;
-  padding: 8px;
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+    color: rgb(94, 169, 255);
 }
+
 
 #maps {
   position: absolute;
